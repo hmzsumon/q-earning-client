@@ -15,7 +15,7 @@ const Dashboard = () => {
   const { user } = useSelector((state: any) => state.auth);
   const { data } = useGetDashboardQuery(undefined);
   const { dashboardData } = data || {};
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     if (!openModal) return;
